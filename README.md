@@ -5,7 +5,7 @@
 ## **Objectives of the Experiment**
 > At the end of Programming Assessment 3, the student should be able to load a `CSV` dataset into a Pandas DataFrame, select rows and columns using positional and label-based indexing, filter records using boolean conditions on a DataFrame column, and extract a well-defined subset of data without altering the source data for each problem given. The source data `cars.csv` shall be used throughout experiment 3.
 
-## A. Reproducible Normalization Problem
+## A. Positional and Label-Based Slicing
 > **Instructions:** Load `cars` to display the shape and the complete list of column names of `cars`. Then, using positional slicing, create the subset `cars_6_to_10` containing rows 6 through 10 of the dataset, where the first row is row `1`. The subset `cars_6_to_10` should only display the columns `Model`, `mpg`, `cyl`, `hp`, and `gear`, in that order. When retrieving rows 6 to 10, the row selection must use `iloc`, while the column selection must use column labels.
 
 To load `cars.csv` as a Pandas DataFrame, the python library `Pandas` must be first initialized to begin with data structures,
