@@ -69,7 +69,7 @@ The subsets `toyota` and `pontiac` will return the following tables:
 ## C. Multi-Model Subsetting
 > **Instructions:** Create a DataFrame named `selected_cars` containing only the records for three models: `Datsun 710`, `Lotus Europa`, and `Ferrari Dino`. For `selected_cars`, retain only the  `Model`, `mpg`, `cyl`, `hp`, and `gear`. Select the rows by their model values rather than by row numbers. Display `selected_cars` and its shape, in which the final DataFrame must contain exactly three rows and five columns.
 
-This time, the problem asks for three selected models that are far apart from each other within the main data frame. Boolean indexing would suffice this condition although with the help of the OR operator `|` to retrieve the individual models from the main data frame.
+This time, the problem asks for three selected models that are far apart from each other within the main data frame. While using the row numbers would be the easiest route to locate the three models, it is important to note that row selection is limited to *model values*, which means to retrieve them by their names under `Model`. Boolean indexing would suffice this condition although with the help of the OR operator `|` to retrieve the individual models from the main data frame.
 
 ### Solution to the Problem
 
