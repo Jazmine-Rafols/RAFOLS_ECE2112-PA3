@@ -50,7 +50,7 @@ Using Boolean indexing, locating a specific model can be done through the equiva
 ```python
 toyota = cars.loc[(cars['Model']=='Toyota Corolla'),:]
 ```
-`cars[`Model`]` is essentially saying that, to locate the desired car model, it must refer to the main data frame `cars` under the column `Model` and then followed by the specific name `Toyota Corolla`. Again, `:` means it will take the complete table of the row as is. Printing `toyota` should return the complete row of `Toyota Corolla` and its elements.
+`cars[Model]` is essentially saying that, to locate the desired car model, it must refer to the main data frame `cars` under the column `Model` and then followed by the specific name `Toyota Corolla`. Again, `:` means it will take the complete table of the row as is. Printing `toyota` should return the complete row of `Toyota Corolla` and its elements.
 
 The same is done with the model `Pontiac Firebird`, although with certain limitations. `pontiac` should only display a portion of the total columns: `Model`, `mpg`, `hp`, and `wt`. So `pontiac = cars.loc` has an extended Boolean condition after the car model retrieval and replacing `toyota`’s colon operator, as demonstrated below:
 ```python
